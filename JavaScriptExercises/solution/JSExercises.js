@@ -11,7 +11,7 @@
 
 // Your explanation:
 // In JS, if objects are compared to one another they compare the instances
-// of the objects, not the contents of the objects.  Therefor, line 18 will never
+// of the objects, not the contents of the objects.  Therefore, line 18 will never
 // return true because no two different objects can ever be equal.  To solve this,
 // we simply need to compare the 'name' property of each object to one another.  If the
 // strings are equal, we will get the desired output.
@@ -39,7 +39,7 @@ console.log(greet({ name: 'amy' }));
 // on the value of i.
 
 // Your explanation:
-// This problem deals with JS asynchronicity and variable scoping.  because setTimeout is
+// This problem deals with JS asynchronicity and variable scoping.  Because setTimeout is
 // an async operation, none of the console.log callbacks will be invoked until after
 // all synchronous code has finished executing.  That means the loop will finish
 // with the value of i being 4, and all the Timeouts set, before the first timeout
@@ -103,11 +103,11 @@ sayName();
 
 // Your explanation:
 // This solution has to do with method definitions on the the class of an object,
-// vs the prototyp of the object.  Because the .bark method is defined on the class
-// constructor function instead of the object's prototype instances of the class
-// do not have access to the .bark method.  There are 3 potential solutions, only 2
-// are acceptable answers.  The first is we bind the context of 'this' when we invoke
-// .bark, but this only solves the immediate problem, it does not give access to .bark
+// vs the prototype of the object.  Because the .bark method is defined on the class
+// constructor function instead of the object's prototype, instances of the class
+// do not have access to the .bark method.  There are 3 potential solutions: only 2
+// are acceptable answers.  The first is to bind the context of 'this' when we invoke
+// .bark, but this only solves the immediate problem. It does not give access to .bark
 // for other instances of the Dog class.  The second solution is to define .bark on
 // Dog.prototype.  This is the prefered solution.  The third solution is to refactor
 // the Dog class defintion to ES6 syntax and define .bark as a method within the class.

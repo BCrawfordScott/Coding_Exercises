@@ -11,7 +11,7 @@ import {
 
 // There is more than one way to implement conditional rendering in React, and I
 // encourage you to read up on the possibilities and their benefits/drawbacks.  This
-// solution employs object property checking component state in some simple JSX tags.
+// solution employs object-property-checking the component state in some JSX tags.
 // Common if else logic and string equality are another potential solution, though more
 // costly.
 
@@ -39,7 +39,7 @@ class ModalMain extends React.Component {
     // Pay attention to the given openModal function and how it's used.  This informs
     // your action creators.
     // In the div class named "modal" we will use jsx to return the proper modal by keying
-    // into state with the extrated modal property from props. If modal is null, React knows
+    // into state with the extracted modal property from props. If modal is null, React knows
     // to render nothing.
     return(
       <div>

@@ -10,3 +10,4 @@ A collection of coding exercises and challenges for testing knowledge of concept
 * [JavaScript Exercises](https://github.com/BCrawfordScott/Coding_Exercises/tree/master/JavaScript/JavaScriptExercises)
 * [Scroll to Top Component Challenge](https://github.com/BCrawfordScott/Coding_Exercises/tree/master/React-Redux/ScrollToTopChallenge)
 * [React-Redux Modal Challenge](https://github.com/BCrawfordScott/Coding_Exercises/tree/master/React-Redux/ReactReduxModalChallenge)
+* [Make Change](https://github.com/BCrawfordScott/Coding_Exercises/tree/master/Ruby/MakeChangeChallenge)

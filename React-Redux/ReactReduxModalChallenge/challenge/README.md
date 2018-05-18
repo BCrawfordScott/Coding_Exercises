@@ -4,7 +4,7 @@
 
 Build out the necessary React and Redux structure to make the given modals functional.
 
-* All three modals should be opened from within the ModalMain Component.
+* All three modals should be opened from within the `ModalMain` Component.
 * All three modals should be opened by invoking the same function but with different arguments.
 * All modals should be closed by the same function.
 * The state shape should stay the same as the example state.

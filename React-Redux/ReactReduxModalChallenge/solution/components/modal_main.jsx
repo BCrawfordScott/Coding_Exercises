@@ -75,8 +75,6 @@ const mapDispatchToProps = (dispatch) => {
 export default connect(mapStateToProps, mapDispatchToProps)(ModalMain);
 
 
-
-
   /*
     Alternative Solution:  This method relies on the exact same redux
     architecture and mdp/msp, but instead uses a case

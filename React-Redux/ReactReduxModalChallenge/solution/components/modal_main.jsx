@@ -12,8 +12,7 @@ import {
 // There is more than one way to implement conditional rendering in React, and I
 // encourage you to read up on the possibilities and their benefits/drawbacks.  This
 // solution employs object-property-checking the component state in some JSX tags.
-// Common if else logic and string equality are another potential solution, though more
-// costly.
+// Scorll past the export statement for another possible solution.
 
 class ModalMain extends React.Component {
   constructor(props){
@@ -74,3 +73,45 @@ const mapDispatchToProps = (dispatch) => {
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(ModalMain);
+
+
+
+
+  /*
+    Alternative Solution:  This method relies on the exact same redux
+    architecture and mdp/msp, but instead uses a case
+    statement to determine the modal to render.  Altough string comparison is
+    an expensive operation, the benefit here is a stateless functional component
+    (easier to read/maintain, less memory intensive).
+  */
+
+function ModalMain2 ({ modal, openModal, closeModal }) {
+
+  let modalComponent;
+  switch(modal){
+    case("modal1"):
+      modalComponent = <Modal1 />;
+      break;
+    case("modal2"):
+      modalComponent = <Modal2 />;
+      break;
+    case("modal3"):
+      modalComponent = <Modal3 />;
+      break;
+    default:
+      modalComponent = null;
+  }
+
+  return (
+    <div>
+      <div onClick={() => openModal("modal1")}>Modal1</div>
+      <div onClick={() => openModal("modal2")}>Modal2</div>
+      <div onClick={() => openModal("modal3")}>Modal3</div>
+      <div onClick={() => closeModal()}>Close Modal</div>
+
+      <div className="modal">
+        { modalComponent }
+      </div>
+    </div>
+  );
+}

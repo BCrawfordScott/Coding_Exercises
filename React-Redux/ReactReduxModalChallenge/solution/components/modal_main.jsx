@@ -59,7 +59,7 @@ class ModalMain extends React.Component {
 const mapStateToProps = (state) => {
   // Here we will extract the current modal property from the store
   return {
-    modal: store.ui.modal
+    modal: state.ui.modal
   };
 };
 

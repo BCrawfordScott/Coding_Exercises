@@ -4,4 +4,4 @@ const Modal2 = (props) => {
   );
 };
 
-export default modal2;
+export default Modal2;

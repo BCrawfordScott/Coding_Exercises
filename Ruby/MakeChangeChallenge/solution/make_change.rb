@@ -101,7 +101,7 @@ def make_change(arr, target)
     # It's important to note that we will not return from inside this iteration like
     # in the previous solution, instead we will only update the best_change we've
     # found if appropriate.
-    best_remainder = make_change(remainder, coins.drop(index))
+    best_remainder = make_change(coins.drop(index), new_target)
 
     # We may not be able to make the remaining amount of change (e.g.,
     # if coins doesn't have a 1cent piece), in which case we shouldn't
